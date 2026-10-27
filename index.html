@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles/style.css"
+    </head>
+    <body>
+        <header class="header">
+            <!-- <h1>Ella's portfolio</h1> -->
+            <h1><a href="#">Ella's portfolio</a></h1>
+            <nav class="nav">
+                <a href="#biography">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <a href="https://github.com/Ellalella">Github</a>
+            </nav>
+        </header>
+        <main class="main">
+
+            <section class="section" id="intro">
+                <p id="intro-text">
+                Hello!<br>
+                Welcome to my portfolio.
+                </p>
+                <img id="img1" src="assets/me.jpg" alt="A picture of me">
+            </section>
+
+            <section class="section" id="biography">
+                <h2>About me</h2>
+                <p>
+                My name is Ella and I am a student who likes problem solving and creative tasks in general. I spend my time studying full-time as well as working part-time. I like to spend my free time just relaxing, drawing, or some times with small coding projects just for fun.<br>
+                One of my skills involves programming, which I practice both in school, at work and at home. I first started with programming at my school before University. We got to do some easy programming tasks in Python as well as some web development. I enjoyed this a lot so I decided to apply to the computer science and engineering program at Halmstad university.<br> 
+                Since I started my university studies a few years ago I have gotten familiar to a few different tools and languages. In school I have mostly used Java for courses like algorithms and data structures or object oriented programming. At work, I mostly use C or python. I am also a little bit familiar with web development tools such as html and CSS.<br> 
+                I have been especially interested by C programming, so a personal goal of mine is to improve my knowledge of C since it will also be useful at work and there is clear space for improvement.
+                </p>
+            </section>
+
+            <section class="section">
+                <img id="img2" src="assets/image2.jpg" alt="A green nature drawing that I made">
+            </section>
+
+            <section class="section" id="skills">
+                <h2>My skills</h2>
+                <table>
+                    <tr>
+                        <th>Skill</th>
+                        <th>experience level</th>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>HTML+CSS</td>
+                        <td>beginner</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="section">
+                <img id="img3" src="assets/image3.jpg" alt="A drawing with green leaves that i made">
+            </section>
+
+            <section class="section" id="contact">
+                <h2>Contact me</h2>
+                <p>All fields are required. You cannot send the message with clear space in any of the boxes.</p>
+                <form action="mailto:ella.krogh0045@stud.hkr.se" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Jane Doe" required/>
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="jane.doe@mail.com" required/>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write message here" required></textarea>
+
+                    <input id="button" type="submit" value="Send"/>
+                </form>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <h3>Contact Info:</h3>
+            <ul>
+                <li><p>Email: ella.krogh0045@stud.hkr.se</p></li>
+                <li><p>Location: Helsingborg, Sweden</p></li>
+            </ul>
+
+            <h3>Legal:</h3>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+
+            <p id="copy">&copy; 2026 Ella Krogh. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
