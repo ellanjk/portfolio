@@ -14,7 +14,7 @@
                 <a href="#biography">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
-                <a href="https://github.com/Ellalella">Github</a>
+                <a href="https://github.com/ellanjk">Github</a>
             </nav>
         </header>
         <main class="main">
@@ -73,15 +73,16 @@
 
             <section class="section" id="contact">
                 <h2>Contact me</h2>
-                <form action="mailto:ella.krogh0045@stud.hkr.se" method="post" enctype="text/plain">
+                <form id="form" method="post" enctype="text/plain">
+                <!-- <form action="mailto:ella.krogh0045@stud.hkr.se" method="post" enctype="text/plain"> -->
                     <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Jane" required/>
+                    <input type="text" id="firstName" name="firstName" placeholder="Jane"/>
 
                     <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required/>
+                    <input type="text" id="lastName" name="lastName" placeholder="Doe"/>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="jane.doe@mail.com" required/>
+                    <input type="email" id="email" name="email" placeholder="jane.doe@mail.com"/>
 
                     <label for="subject">Subject:</label>
                     <select id="subject" name="subject">
@@ -91,7 +92,7 @@
                     </select>
 
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write message here" required></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Write message here"></textarea>
 
                     <section>
                         <input id="button" type="submit" value="Submit"/>
@@ -117,6 +118,6 @@
             <p id="copy">&copy; 2026 Ella Krogh. All rights reserved.</p>
         </footer>
 
-        <script src="script.js"></script>
+        <script src="contact.js"></script>
     </body>
 </html>
