@@ -24,6 +24,13 @@ function validateFname() {
 }
 
 function validateLname() {
+    const lname = document.getElementById('lastName').value;
+    const regex = /^[A-Za-z]+$/;
+    const success = regex.test(lname);
+
+    if(!success) {
+        return false;
+    }
     return true; 
 }
 
