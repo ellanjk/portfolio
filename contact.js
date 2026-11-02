@@ -47,6 +47,12 @@ function validateEmail() {
     return true;
 }
 
+// Validates length of message
 function validateMessage() {
+    const message = document.getElementById('message').value;
+
+    if(message.length < 20) {
+        return false;
+    }
     return true;
 }
