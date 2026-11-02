@@ -23,6 +23,7 @@ function validateFname() {
     return true; 
 }
 
+// Validates last name using regex
 function validateLname() {
     const lname = document.getElementById('lastName').value;
     const regex = /^[A-Za-z]+$/;
@@ -34,7 +35,15 @@ function validateLname() {
     return true; 
 }
 
+// Validates email using regex
 function validateEmail() {
+    const email = document.getElementById('email').value;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const success = regex.test(email);
+
+    if(!success) {
+        return false;
+    }
     return true;
 }
 
