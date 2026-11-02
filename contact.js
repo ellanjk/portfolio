@@ -4,6 +4,7 @@ const lname = document.getElementById('lastName');
 const email = document.getElementById('email');
 const textMessage = document.getElementById('message');
 const msg = document.querySelectorAll('.msg');
+const resetButton = document.getElementById('reset');
 
 form.addEventListener('submit', function(event) {
     const success = validateFname() && validateLname() && validateEmail() && validateTextMessage();
@@ -15,6 +16,25 @@ form.addEventListener('submit', function(event) {
         alert("Form submitted!");
     }
 });
+
+resetButton.addEventListener('click', clearForm);
+
+fname.addEventListener('input', validateFname);
+lname.addEventListener('input', validateLname);
+email.addEventListener('input', validateEmail);
+textMessage.addEventListener('input', validateTextMessage);
+
+function clearForm(event) {
+    fname.style.border = "";
+    lname.style.border = "";
+    email.style.border = "";
+    textMessage.style.border = "";
+
+    msg.forEach(function(m) {
+        m.innerHTML = "";
+        m.style.color = "";
+    });
+}
 
 function showError(object, msgNr, message) {
     msg[msgNr].innerHTML = message;

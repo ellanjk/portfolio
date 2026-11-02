@@ -147,19 +147,19 @@ th {
     margin: 0 0 0.5vh 0;
 }
 
-#button {
+.button {
     color: var(--color-light-text);
     background-color: var(--color-dark);
     height: 6vh;
     width: 9vw;
 }
 
-#button:hover {
+.button:hover {
     background-color: var(--color-dark-text);
     color: var(--color-light-text);
 }
 
-#button:active {
+.button:active {
     background-color: var(--color-bright);
 }
 
@@ -169,6 +169,7 @@ input {
     border-style: solid;
     height: 5vh;
     width: 20vw;
+    margin: 0 0 1vh 0;
 }
 
 textarea {
@@ -177,7 +178,7 @@ textarea {
     border-style: solid;
     height: 10vh;
     width: 20vw;
-    margin: 0 0 3vh 0;
+    margin: 0 0 1vh 0;
 }
 
 select {
