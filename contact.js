@@ -7,13 +7,12 @@ const msg = document.querySelectorAll('.msg');
 const resetButton = document.getElementById('reset');
 
 form.addEventListener('submit', function(event) {
+    event.preventDefault();
     const success = validateFname() && validateLname() && validateEmail() && validateTextMessage();
 
-    if (!success) {
-        event.preventDefault();
-
-    } else {
-        alert("Form submitted!");
+    if (success) {
+        msg[4].innerHTML = "Thank you " + fname.value + "! Your message has been submitted."
+        setTimeout(clearForm, 3000);
     }
 });
 
@@ -24,11 +23,15 @@ lname.addEventListener('input', validateLname);
 email.addEventListener('input', validateEmail);
 textMessage.addEventListener('input', validateTextMessage);
 
-function clearForm(event) {
+function clearForm() {
     fname.style.border = "";
+    fname.value = "";
     lname.style.border = "";
+    lname.value = "";
     email.style.border = "";
+    email.value = "";
     textMessage.style.border = "";
+    textMessage.value = "";
 
     msg.forEach(function(m) {
         m.innerHTML = "";
