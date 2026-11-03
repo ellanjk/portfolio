@@ -6,6 +6,7 @@ const textMessage = document.getElementById('message');
 const msg = document.querySelectorAll('.msg');
 const resetButton = document.getElementById('reset');
 
+// If all validation functions are successful, the form is submitted. 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
     const success = validateFname() && validateLname() && validateEmail() && validateTextMessage();
@@ -17,12 +18,12 @@ form.addEventListener('submit', function(event) {
 });
 
 resetButton.addEventListener('click', clearForm);
-
 fname.addEventListener('input', validateFname);
 lname.addEventListener('input', validateLname);
 email.addEventListener('input', validateEmail);
 textMessage.addEventListener('input', validateTextMessage);
 
+// Clears all fields, border styles, and messages
 function clearForm() {
     fname.style.border = "";
     fname.value = "";
@@ -39,12 +40,14 @@ function clearForm() {
     });
 }
 
+// Function to show error message
 function showError(object, msgNr, message) {
     msg[msgNr].innerHTML = message;
     msg[msgNr].style.color = "red";
     object.style.border = "3px solid red"
 }
 
+// Function to show success message
 function showSuccess(object, msgNr, message) {
     msg[msgNr].innerHTML = message;
     msg[msgNr].style.color = "green";

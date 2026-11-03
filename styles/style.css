@@ -276,8 +276,16 @@ footer p {
         width: 60vw;
     }
 
+    select {
+        width: 60vw;
+    }
+
     textarea {
         width: 60vw;
+    }
+
+    .button {
+        width: 20vw;
     }
 
     footer {
@@ -305,5 +313,9 @@ footer p {
 
     #copy p {
         margin: auto;
+    }
+
+    #contact p {
+        font-size: 2vw;
     }
 }
